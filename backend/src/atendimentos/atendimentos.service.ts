@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Atendimento } from '../atendimentos/atendimentos.entity';
-import { CreateAtendimentoDto } from './create-atendimento.dto';
+import { CreateAtendimentoDto } from './create-atendimentos.dto';
 import { Cidadao } from '../cidadaos/cidadaos.entity';
 import { Profissional } from '../profissionais/profissionais.entity';
 

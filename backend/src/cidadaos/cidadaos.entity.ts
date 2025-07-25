@@ -12,11 +12,11 @@ export class Cidadao {
   @Column({ length: 11, unique: true })
   cpf: string;
 
-  @Column('date')
+  @Column({ name: 'data_nascimento' })
   data_nascimento: Date;
 
   @Column({ type: 'char', length: 1 })
-  sexo: string; // 'M', 'F' ou 'O'
+  sexo: string;
 
   @OneToMany(() => Atendimento, (atendimento) => atendimento.cidadao)
   atendimentos: Atendimento[];

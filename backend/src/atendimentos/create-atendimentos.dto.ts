@@ -1,4 +1,4 @@
-import { IsInt, IsEnum, IsString, IsNotEmpty } from 'class-validator';
+import { IsInt, IsDateString, IsEnum, IsString, IsNotEmpty } from 'class-validator';
 import { TipoAtendimento } from './atendimentos.entity';
 
 export class CreateAtendimentoDto {
@@ -7,6 +7,9 @@ export class CreateAtendimentoDto {
 
   @IsInt()
   profissional_id: number;
+
+  @IsDateString()
+  data: string;
 
   @IsEnum(TipoAtendimento)
   tipo: TipoAtendimento;
