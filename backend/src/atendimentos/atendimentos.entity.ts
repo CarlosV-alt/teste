@@ -20,7 +20,7 @@ export class Atendimento {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @CreateDateColumn()
+  @Column()
   data: Date;
 
   @Column({
